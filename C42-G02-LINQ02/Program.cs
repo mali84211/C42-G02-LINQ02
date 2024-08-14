@@ -33,6 +33,48 @@ namespace C42_G02_LINQ02
             //    Console.WriteLine(item);
             //}
             #endregion
+
+            #region V2
+            //var Result = ProductList.Select(P => P.ProductName);
+            //var Result = CustomersList.Select(C => C.CustomerName);
+            //var Result ProductList.Select(P => {  return new {P.ProductId,P.ProductName}; });
+            //var Result = from P in ProductList
+            //         select P;
+            //var Result = from P in ProductList
+            //             select P.ProductName;
+            //var Result = from P in ProductList
+            //             select new
+            //             {
+            //                 P.ProductId,
+            //                 P.ProductName
+            //             };
+
+            //var Result = CustomersList.Select(C => C.Orders);
+            //var Result = CustomersList.SelectMany(C => C.Orders);
+
+            //var Result = from C in CustomersList
+            //             from O in C.Orders
+            //             select O;
+
+            //var Result = ProductList.Where(P => P.UnitsInStock > 0).Select(P =>
+            //new
+            //{
+            //    P.ProductId,
+            //    P.ProductName,
+            //    NewPrice = P.UnitPrice- P.UnitPrice*0.1M
+            //});
+
+            //foreach (var item in Result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region
+            #endregion
+
+            #region
+            #endregion
         }
     }
 }
