@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net.Http.Headers;
 
 namespace C42_G02_LINQ02
 {
@@ -85,15 +86,24 @@ namespace C42_G02_LINQ02
             //                 P.UnitsInStock,
             //                 P.UnitPric
             //             };
-           //var Result= ProductList.Reverse<Product>();
-           // foreach (var item in Result)
-           // {
-           //     Console.WriteLine(item);
-           // }
+            //var Result= ProductList.Reverse<Product>();
+            // foreach (var item in Result)
+            // {
+            //     Console.WriteLine(item);
+            // }
             #endregion
 
-            #region
-            #endregion
+            #region V4
+            //List<Porduct> Result = ProductList.Where(P => P.UnitsInStock == 0).ToList();
+            //Product[]    Result = ProductList.Where(P => P.UnitsInStock == 0).ToArray();
+            //Dictionary<long,Product> Result = ProductList.Where(P => P.UnitsInStock == 0).ToDictionary(P=>P.ProductId);
+            //HashSet<Product> Result = ProductList.Where(P => P.UnitsInStock == 0).ToHashSet();
+            //var Result = ProductList.Where(P => P.UnitsInStock == 0).ToLookUp(P => P.ProductId);
+            //foreach (var item in Result)
+            //{
+            //   Console.WriteLine(item);
+            //}
+                #endregion
         }
     }
 }
