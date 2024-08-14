@@ -16,7 +16,7 @@ namespace C42_G02_LINQ02
 
             //var Result = ProductList.Where(P => P.Category == "Meat/Poultry"&&P.UnitsInStock>0);
 
-            //Result = from P in ProductList
+            //var Result = from P in ProductList
             //         where P.UnitsInStock > 0 && P.Category == "Meat/Poultry"
             //         select P;
 
@@ -70,7 +70,26 @@ namespace C42_G02_LINQ02
             //}
             #endregion
 
-            #region
+            #region V3
+            //var Result = ProductList.OrderBy(P => P.UnitPrice);
+            //var Result = ProductList.OrderByDescending(P => P.UnitPrice);
+            //var Result = from P in ProductList
+            //       orderby P.UnitPrice
+            //        select P;
+            //var Result = ProductList.Select(P => new { P.ProductName, P.UnitsInStock, P.UnitPric }).orderby(P.UnitsInStock);
+            //var Result = from P in ProductList
+            //             orderby P.UnitsInStock, P.UnitPric ascending
+            //             select new
+            //             {
+            //                 P.ProductName,
+            //                 P.UnitsInStock,
+            //                 P.UnitPric
+            //             };
+           //var Result= ProductList.Reverse<Product>();
+           // foreach (var item in Result)
+           // {
+           //     Console.WriteLine(item);
+           // }
             #endregion
 
             #region
